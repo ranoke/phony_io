@@ -1,0 +1,130 @@
+.changelog-controls {
+    width: 100%;
+    margin: 62px 0 6px 0;
+    display: flex;
+    flex-direction: row;
+
+    &__heading {
+        margin: 6px 0 0 0;
+        color: var(--colors-1-primary, #272557);
+        font-variant-numeric: lining-nums proportional-nums;
+
+        /* Subtitle1 dedisse sc */
+        font-family: Nunito-400;
+        font-size: 16px;
+        line-height: 21px;
+        /* 131.25% */
+        letter-spacing: 0.2px;
+
+        width: 100%;
+
+        &.one {
+            max-width: 647px;
+            margin: 5px 0 0 0;
+            letter-spacing: 0.5px;
+        }
+
+        &.two {
+            max-width: 232px;
+        }
+
+        &.three {
+            max-width: 447px;
+        }
+    }
+}
+
+.changelog-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 13px 0;
+
+    &__row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background: #F8F8F8;
+        padding: 17px 0px 18.7px 36px;
+
+        &.even {
+            background: transparent;
+        }
+    }
+
+    &__row-name {
+        width: 100%;
+        max-width: 646.5px;
+        margin: 4px 0 0 0.5px;
+        color: #000;
+
+        /* h6 Heading */
+        font-family: Nunito-600;
+        font-size: 14px;
+        line-height: 20.4px;
+        /* 145.714% */
+        letter-spacing: 0.06px;
+    }
+
+    &__time {
+        width: 100%;
+        max-width: 232px;
+        margin: 3.5px 0 0 0;
+        color: var(--colors-grey-500, #9E9E9E);
+        font-variant-numeric: lining-nums proportional-nums;
+
+        /* Subtitle1 dedisse sc */
+        font-family: Nunito-400;
+        font-size: 16px;
+        line-height: 21px;
+        /* 131.25% */
+        letter-spacing: 0.09px;
+    }
+
+    &__tags {
+        width: 100%;
+        max-width: 586px;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    &__tag {
+        padding: 5px 20px;
+
+        /* Body2 dedisse scrips */
+        font-family: Nunito-400;
+        font-size: 12px;
+        line-height: 17px;
+        /* 141.667% */
+        letter-spacing: 0.6px;
+        border-radius: 30px;
+
+        &.admin {
+            color: #272557;
+            background: #BFBECD;
+        }
+
+        &.feedback {
+            color: #FFF;
+            background: #03B8FD;
+        }
+
+        &.changelog {
+            color: #FFF;
+            background: #546E7A;
+        }
+    }
+
+    &__buttons {
+        margin: 3px 0 0 0;
+        display: flex;
+        flex-direction: row;
+        gap: 22px;
+    }
+
+    &__edit-button {
+        width: 20px;
+        height: 20px;
+    }
+}

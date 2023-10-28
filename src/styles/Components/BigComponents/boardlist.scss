@@ -1,0 +1,335 @@
+.page-content {
+    width: 100%;
+    max-width: 1680px;
+    padding: 0 40px 40px 36.5px;
+    position: relative;
+}
+
+.boards {
+
+    &__head {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    &__create-button {
+        margin: 10px -1px 0 0px;
+        border-radius: 5px;
+        background: var(--colors-2-secondary, #1565C0);
+        display: inline-flex;
+        padding: 9.5px 31px 7px 31px;
+        align-items: center;
+        width: 147px;
+        height: 37px;
+        color: #FFF;
+
+        /* Subtitle2 muted scri */
+        font-family: Nunito-600;
+        font-size: 14px;
+        line-height: 21px;
+        /* 150% */
+        letter-spacing: 0.07px;
+
+        &.post{
+            width: 136px;
+            height: 38px;
+            padding: 3px 0px 0  31px;
+        }
+
+        &.add{
+            width: 114px;
+            height: 38px;
+            // padding: 3px 0px 0 31px;
+        }
+
+        &.segment{
+            width: 180px;
+            height: 37px;
+        }
+
+        &.statuses-button{
+            width: 132px;
+            height: 37px;
+        }
+
+        &.record{
+            width: 134px;
+        }
+        
+
+        &.add-label{
+            width: 124px;
+                height: 37px;
+        }
+    }
+
+}
+
+
+.board-list {
+    margin: 20px 0 0 0;
+    width: 100%;
+    max-width: 1583px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 14px 0px rgba(53, 64, 82, 0.05);
+
+    &__head {
+        height: 71px;
+        width: 100%;
+        padding: 26px 69.5px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__heading {
+        height: 28px;
+        color: var(--colors-1-primary, #272557);
+
+        /* Subtitle1 dedisse sc */
+        font-family: Nunito-400;
+        font-size: 16px;
+        line-height: 21px;
+        /* 131.25% */
+        letter-spacing: 0.09px;
+
+        &.first {
+            width: 100%;
+            max-width: 878px;
+        }
+    }
+
+    &__line {
+        width: 100%;
+        border-bottom: 2px solid #E0E0E0;
+    }
+
+    &__rows {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__row {
+        width: 100%;
+        height: 85.5px;
+        display: flex;
+        flex-direction: row;
+        padding: 0 29px 0 21px;
+        background: #F8F8F8;
+
+        &.even {
+            height: 83px;
+            background: transparent;
+        }
+    }
+
+    &__name-box {
+        margin: 30px 0 0 0;
+        display: flex;
+        flex-direction: row;
+        gap: 39px;
+
+        width: 100%;
+        max-width: 927px;
+    }
+
+    &__drag-icon {
+        margin: 3px 0 0 0;
+        width: 9px;
+        height: 15px;
+    }
+
+    &__name {
+
+        color: #000;
+
+        /* h6 Heading */
+        font-family: Nunito-600;
+        font-size: 14px;
+        line-height: 20.4px;
+        /* 145.714% */
+        letter-spacing: 0.06px;
+    }
+
+    &__number {
+        margin: 28.5px 0 0 0;
+        color: #000;
+
+        /* h3 Heading */
+        font-family: Nunito-600;
+        font-size: 24px;
+        line-height: 28.8px;
+        /* 120% */
+
+        width: 100%;
+        max-width: 488px;
+    }
+
+    &__buttons {
+        margin: 27px 0 0 0;
+        display: flex;
+        flex-direction: row;
+        gap: 19px;
+    }
+
+    &__lock-button {
+        margin: 3px 0 0 1px;
+        width: 24px;
+        height: 24px;
+
+        &.active {
+            opacity: 1;
+            filter: invert(21%) sepia(93%) saturate(4387%) hue-rotate(203deg) brightness(92%) contrast(83%);
+        }
+
+        cursor: pointer;
+    }
+
+    &__menu-button {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+}
+
+.boards-menu {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &.active {
+        visibility: visible;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.1);
+    }
+
+    &__box {
+        width: 250px;
+        height: 325px;
+        border-radius: 4px;
+        background: #FFF;
+        box-shadow: 0px 0px 20px 0px rgba(53, 64, 82, 0.10);
+        padding: 0px 0 0 0;
+
+        &.posts{
+            height: 241px;
+        }
+
+        &.post-view{
+            margin-top: -1300px;
+            height: 380px;
+        }
+    }
+
+    &__cross {
+        margin: 12px 0 11px 202px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    &__rows {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 44px;
+        gap: 27px;
+
+        &.active {
+            background: rgba(0, 0, 0, 0.05);
+        }
+
+        padding: 13px 0 0 17px;
+        cursor: pointer;
+    }
+
+
+    &__row-text {
+        color: var(--272557, #272557);
+        font-family: Nunito-400;
+        font-size: 14px;
+        line-height: 21px;
+        /* 150% */
+        letter-spacing: 0.079px;
+    }
+
+    &__icon {
+        margin: 1px 0 0 0;
+        width: 20px;
+        height: 20px;
+
+        &.active {
+            filter: invert(21%) sepia(93%) saturate(4387%) hue-rotate(203deg) brightness(92%) contrast(83%);
+        }
+    }
+}
+
+
+
+.board-notify {
+    margin: 18px 0 13px 0;
+    display: none;
+    &.active {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 15px 0 30px;
+        width: 1583px;
+        height: 54px;
+        border-radius: 10px;
+            box-shadow: 0px 0px 14px 0px rgba(53, 64, 82, 0.05);
+    }
+
+    &.fail {
+        background: #FFACAC;
+    }
+
+    &.success {
+            background:  #43A047;
+    }
+
+    &__info-box {
+        margin: -14px 0 0 0;
+        color: #FFF;
+        font-family: Nunito-400;
+        font-size: 14px;
+        line-height: 20px;
+        /* 142.857% */
+        letter-spacing: 0.1px;
+
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        gap: 18px;
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    &__cross {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+}

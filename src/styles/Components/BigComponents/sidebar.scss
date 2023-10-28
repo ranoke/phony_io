@@ -1,0 +1,126 @@
+.sidebar {}
+
+
+.sidebar {
+    width: 262px;
+    // height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+    border: 1px solid var(--lists-hover, rgba(0, 0, 0, 0.05));
+    background-color: #FFFFFF;
+
+    &__logo {
+        margin: 17px 0 0 24px;
+        width: 138px;
+        height: 30px;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    &__nav-box {
+        display: flex;
+        flex-direction: row;
+        padding: 13px 24px 10px 24px;
+        gap: 20px;
+        width: 100%;
+        height: auto;
+        // align-items: center;
+        position: relative;
+
+        &.active {
+            background: #F2F2F5;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &.drop-active {
+            height: 129px;
+            cursor: auto;
+        }
+    }
+
+    &__nav-icon {
+        margin: -1px 0 0 0px;
+        width: 20px;
+        height: 20px;
+        opacity: 0.7;
+        filter: invert(15%) sepia(50%) saturate(850%) hue-rotate(204deg) brightness(94%) contrast(99%);
+
+        &.active {
+            opacity: 1;
+            filter: invert(21%) sepia(93%) saturate(4387%) hue-rotate(203deg) brightness(92%) contrast(83%);
+        }
+    }
+
+    &__nav-text {
+        height: 21px;
+        color: var(--272557, #272557);
+        font-family: Nunito-600;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.07px;
+    }
+
+    &__arrow {
+        margin: 0px 0 0 78px;
+        width: 20px;
+        height: 20px;
+        transform: rotate(180deg);
+        &.active {
+            transform: rotate(0deg);
+        }
+    }
+
+    &__preview {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__dropdown {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        visibility: hidden;
+
+        &.active {
+            top: 49px;
+            visibility: visible;
+        }
+    }
+
+    &__drop-row {
+        width: 234px;
+        height: 24px;
+        padding: 3px 0 0 40px;
+        color: var(--272557, #272557);
+        font-family: Nunito-400;
+        font-size: 12px;
+        line-height: 19.92px;
+        letter-spacing: 0.3px;
+
+        &.active {
+            background: #F2F2F5;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.active {}

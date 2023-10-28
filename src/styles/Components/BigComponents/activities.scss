@@ -1,0 +1,136 @@
+.activities {
+    margin: 10px 0 0 0;
+    width: 1583px;
+    height: 778px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 14px 0px rgba(53, 64, 82, 0.05);
+    padding: 22px 0 22px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__rows {
+        height: 0;
+        visibility: hidden;
+
+        &.active {
+            height: auto;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            visibility: visible;
+        }
+    }
+
+    &__row {
+        width: 100%;
+        background: transparent;
+        padding: 20px 0 18.6px 42px;
+        display: flex;
+        flex-direction: row;
+
+        &.even {
+            background: #F8F8F8;
+
+            .activities__calling-container {
+                margin: 6px 0 0 0;
+            }
+
+        }
+    }
+
+    &__avatar {
+        width: 45px;
+        height: 45px;
+        margin: 0 27px 0 0;
+    }
+
+    &__calling-container {
+        width: 100%;
+        max-width: 221px;
+        margin: 2px 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__name {
+        color: #000;
+
+        /* h6 Heading */
+        font-family: Nunito-600;
+        font-size: 14px;
+        line-height: 20.4px;
+        /* 145.714% */
+        letter-spacing: 0.06px;
+    }
+
+    &__voted {
+        color: var(--buttons-outlined-primary, #1565C0);
+
+        /* Body1 dedisse scrips Copy */
+        font-family: Nunito-400;
+        font-size: 14px;
+        line-height: 21px;
+        /* 150% */
+        letter-spacing: 0.079px;
+    }
+
+    &__time {
+        margin: 14px 0 0 0;
+        color: var(--colors-grey-500, #9E9E9E);
+
+        /* Body1 dedisse scrips Copy */
+        font-family: Nunito-400;
+        font-size: 14px;
+        line-height: 21px;
+        /* 150% */
+        letter-spacing: 0.079px;
+
+        width: 100%;
+        max-width: 177px;
+    }
+
+    &__text-container {
+
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+
+        &.one {
+            margin: 13px 0 0 0;
+        }
+
+        &.two {
+            margin: -3px 0 0 0;
+        }
+    }
+
+    &__text-h {
+        color: var(--colors-1-primary, #272557);
+
+        /* Subtitle2 muted scri */
+        font-family: Nunito-600;
+        font-size: 14px;
+        line-height: 21px;
+        /* 150% */
+        letter-spacing: 0.07px;
+    }
+
+    &__text-l {
+        color: var(--colors-1-primary, #272557);
+        font-variant-numeric: lining-nums proportional-nums;
+
+        /* Body2 dedisse scrips */
+        font-family: Nunito-400;
+        font-size: 12px;
+        line-height: 17px;
+        /* 141.667% */
+        letter-spacing: 0.6px;
+
+        width: 100%;
+        max-width: 1037px;
+    }
+}

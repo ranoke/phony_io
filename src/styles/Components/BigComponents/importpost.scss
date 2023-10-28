@@ -1,0 +1,194 @@
+.import-post {
+    margin: 12px 0 0 0;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 14px 0px rgba(53, 64, 82, 0.05);
+    padding: 21px 43px 30px 44px;
+    width: 100%;
+    max-width: 970px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    &__heading {
+        color: var(--colors-grey-500, #9E9E9E);
+        font-family: Nunito-400;
+        font-size: 14px;
+        line-height: 21px;
+        /* 150% */
+        letter-spacing: 0.079px;
+    }
+
+    &__board-choose {
+        width: 883px;
+        height: 50px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        border: 1px solid var(--colors-grey-300, #E0E0E0);
+    }
+
+    &__preview {
+        padding: 14px 13px 0 21px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 50px;
+
+        color: #000;
+        font-family: Nunito-400;
+        font-size: 18px;
+        line-height: 21px;
+        /* 116.667% */
+        letter-spacing: 0.079px;
+
+        cursor: pointer;
+    }
+
+    &__drop-arrow {
+        width: 24px;
+        height: 24px;
+        margin: -3px 0 0 0;
+    }
+
+    &__dropdown {
+        position: relative;
+        height: 0;
+        visibility: hidden;
+
+        &.active {
+            padding: 14px 13px 0 21px;
+            visibility: visible;
+            left: -1px;
+            height: auto;
+            width: 883px;
+            height: 50px;
+            flex-shrink: 0;
+            border-radius: 5px;
+            border: 1px solid var(--colors-grey-300, #E0E0E0);
+            background: #FFF;
+            z-index: 20;
+            color: #000;
+            font-family: Nunito-400;
+            font-size: 18px;
+            line-height: 21px;
+            /* 116.667% */
+            letter-spacing: 0.079px;
+            cursor: pointer;
+        }
+    }
+
+    &__file-container {
+        margin: -1px 0 0 0 ;
+        position: relative;
+        width: 882px;
+        height: 70px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        border: 1px dashed var(--colors-grey-300, #E0E0E0);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    &__clip-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    &__file-text {
+        margin: 3px 0 0 1px;
+        color: var(--colors-grey-500, #9E9E9E);
+        font-family: Nunito-400;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.079px;
+
+        label {
+            cursor: pointer;
+            color: #1565C0;
+        }
+    }
+
+    &__input {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+    }
+
+    &__buttons {
+        margin: 21px 0 0 0;
+        display: flex;
+        align-self: flex-end;
+        gap: 20px;
+    }
+
+    &__button {
+        padding: 2px 0 0 0;
+        width: 150px;
+        height: 37px;
+        border-radius: 5px;
+        background: #1565C0;
+        color: #FFF;
+        /* Subtitle2 muted scri */
+        font-family: Nunito-600;
+        font-size: 14px;
+        line-height: 21px;
+        /* 150% */
+        letter-spacing: 0.07px;
+
+        &.cancel {
+            background: #E0E0E0;
+            color: #9E9E9E;
+        }
+    }
+
+
+    &__imported{
+        display: none;
+
+        &.active{
+            margin: 23px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    &__imported-file{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        color: var(--colors-2-secondary, #1565C0);
+        font-variant-numeric: lining-nums proportional-nums;
+    
+        /* Body2 dedisse scrips */
+        font-family: Nunito-400;
+        font-size: 12px;
+        line-height: 17px;
+        /* 141.667% */
+        letter-spacing: 0.6px;
+    }
+
+    &__imported-icon {
+        margin: -3px 0 0 0;
+        width: 16px;
+        height: 16px;
+    }
+
+    &__cancel-icon {
+        width: 20px;
+        height: 20px;
+        margin: 0px 0 0 16px;
+        cursor: pointer;
+    }
+}

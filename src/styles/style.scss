@@ -1,0 +1,67 @@
+@import 'fonts.scss';
+@import 'reset.scss';
+
+@import './Components/BigComponents/sidebar.scss';
+@import './Components/BigComponents/head.scss';
+@import './Components/BigComponents/dashboard.scss';
+@import './Components/BigComponents/boardlist.scss';
+@import './Components/BigComponents/boardpages.scss';
+@import './Components/BigComponents/postlist.scss';
+@import './Components/BigComponents/postvoters.scss';
+@import './Components/BigComponents/importpost.scss';
+@import './Components/BigComponents/editpost.scss';
+@import './Components/BigComponents/postview.scss';
+@import './Components/BigComponents/tags.scss';
+@import './Components/BigComponents/edittags.scss';
+@import './Components/BigComponents/replacetag.scss';
+@import './Components/BigComponents/userlist.scss';
+@import './Components/BigComponents/userdetails.scss';
+@import './Components/BigComponents/activities.scss';
+@import './Components/BigComponents/usersegments.scss';
+@import './Components/BigComponents/statuses.scss';
+@import './Components/BigComponents/changeloglist.scss';
+@import './Components/BigComponents/changeloglabels.scss';
+@import './Components/BigComponents/settings.scss';
+@import './Components/BigComponents/settingsothers.scss';
+
+@import './Pages/main.scss';
+
+html {
+    overflow-x: hidden;
+    min-width: 0;
+
+}
+
+html._lock {
+    overflow-y: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+    min-width: 0;
+}
+
+body._lock {
+    overflow-y: hidden;
+}
+
+#root {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+    background:#F9F9FC;
+
+    min-width: 0;
+}
+
+.height {
+    height: 10000px;
+}
+

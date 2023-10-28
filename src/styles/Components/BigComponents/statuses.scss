@@ -1,0 +1,252 @@
+.buttons-statuses {
+    margin: 0 1px 0 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 27px;
+    height: 37px;
+
+    &__button {
+        margin: 20px 0 0 0;
+        color: var(--272557, #272557);
+
+        /* Subtitle2 muted scri */
+        font-family: Nunito-600;
+        font-size: 14px;
+        line-height: 21px;
+        /* 150% */
+        letter-spacing: 0.07px;
+
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        background: transparent;
+    }
+
+    &__back-icon {
+        margin: -3px 0 0 0;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+
+.statuses {
+    margin: 20px 0 0 0;
+    width: 1583px;
+    height: 352px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 14px 0px rgba(53, 64, 82, 0.05);
+
+    &__head {
+        display: flex;
+        flex-direction: row;
+        padding: 26.5px 0 24px 69px;
+    }
+
+    &__heading {
+        color: #272557;
+        font-variant-numeric: lining-nums proportional-nums;
+
+        /* Subtitle1 dedisse sc */
+        font-family: Nunito-400;
+        font-size: 16px;
+        line-height: 21px;
+        /* 131.25% */
+        letter-spacing: 0.09px;
+
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+
+        &.one {
+            width: 100%;
+            max-width: 327px;
+        }
+
+        &.two {
+            width: 100%;
+            max-width: 236px;
+        }
+
+        &.three {
+            width: 100%;
+            max-width: 282px;
+        }
+
+        &.four {
+            width: 100%;
+            max-width: 202px;
+        }
+    }
+
+    &__info-icon {
+        margin: 3px 0 0 0;
+        width: 16px;
+        height: 16px;
+    }
+
+    &__line {
+        width: 100%;
+        background: #E0E0E0;
+        height: 1px;
+    }
+
+    &__rows {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+        padding: 32px 0 28px 21px;
+        background: #F8F8F8;
+
+        &.even {
+            background: transparent;
+        }
+    }
+
+    &__drag-icon {
+        margin: 2px 39px 0 0;
+        width: 9px;
+        height: 15px;
+    }
+
+    &__name {
+        width: 100%;
+        max-width: 344px;
+        color: var(--colors-grey-500, #9E9E9E);
+
+        /* Body1 dedisse scrips Copy */
+        font-family: Nunito-400;
+        font-size: 14px;
+        line-height: 21px;
+        /* 150% */
+        letter-spacing: 0.079px;
+
+        display: flex;
+        flex-direction: row;
+        gap: 11px;
+    }
+
+    &__small-dot {
+        margin: 7px 0 0 0;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #43A047;
+
+        &.grey {
+            background: #E0E0E0;
+        }
+
+        &.red {
+            background: #E65100;
+        }
+    }
+
+    &__votable {
+        width: 100%;
+        max-width: 275px;
+        color: #43A047;
+
+        /* h6 Heading */
+        font-family: Nunito-600;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20.4px;
+        /* 145.714% */
+        letter-spacing: 0.06px;
+
+        &.yes {
+            color: #43A047;
+        }
+
+        &.no {
+            margin: 0 0 0 0px;
+            color: #9E9E9E;
+        }
+    }
+
+    &__show {
+        width: 100%;
+        max-width: 223px;
+        color: #43A047;
+
+        /* h6 Heading */
+        font-family: Nunito-600;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20.4px;
+        /* 145.714% */
+        letter-spacing: 0.06px;
+
+        &.yes {
+            color: #43A047;
+        }
+
+        &.no {
+            margin: 0 0 0 4px;
+            color: #9E9E9E;
+        }
+    }
+
+    &__privacy {
+        width: 100%;
+        max-width: 202px;
+
+        color: var(--colors-grey-500, #9E9E9E);
+
+        /* h6 Heading */
+        font-family: Nunito-600;
+        font-size: 14px;
+        line-height: 20.4px;
+        /* 145.714% */
+        letter-spacing: 0.06px;
+
+        &.private {
+            color: #272557;
+        }
+    }
+
+    &__color {
+        margin: -4px 0 0 0;
+        width: 100%;
+        max-width: 370px;
+    }
+
+    &__color-ball {
+        width: 29px;
+        height: 29px;
+        background: #43A047;
+        border-radius: 50%;
+
+        &.grey {
+            background: #E0E0E0;
+        }
+
+        &.red {
+            background: #E65100;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 22px;
+    }
+
+    &__button {
+        width: 20px;
+        height: 20px;
+    }
+}

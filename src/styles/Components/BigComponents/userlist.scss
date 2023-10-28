@@ -1,0 +1,130 @@
+.user-filter {
+    margin: 16px 0 0 33px;
+
+    .post-head__row {
+        gap: 18px;
+    }
+}
+
+
+.user-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 15px 0;
+
+    &__row {
+        width: 100%;
+        background: #F8F8F8;
+        display: flex;
+        flex-direction: row;
+        padding: 38px 25px 33.5px 69px;
+
+        &.even {
+            background: transparent;
+        }
+    }
+
+    &__avatar {
+        width: 65px;
+        height: 65px;
+    }
+
+    &__text-container {
+        margin: 0 0 0 31px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__name {
+        color: #000;
+
+        /* h6 Heading */
+        font-family: Nunito-600;
+        font-size: 14px;
+        line-height: 20.4px;
+        /* 145.714% */
+        letter-spacing: 0.06px;
+    }
+
+    &__email {
+        color: var(--buttons-outlined-primary, #1565C0);
+        font-variant-numeric: lining-nums proportional-nums;
+
+        /* Subtitle1 dedisse sc */
+        font-family: Nunito-400;
+        font-size: 16px;
+
+        line-height: 21px;
+        /* 131.25% */
+        letter-spacing: 0.09px;
+    }
+
+    &__date {
+        margin: 6px 0 0 0;
+        color: var(--colors-grey-500, #9E9E9E);
+
+        /* Body1 dedisse scrips Copy */
+        font-family: Nunito-400;
+        font-size: 14px;
+        line-height: 21px;
+        /* 150% */
+        letter-spacing: 0.079px;
+    }
+
+    &__buttons {
+        margin: -0.5px 0 0 106px;
+        display: flex;
+        flex-direction: row;
+        gap: 49px;
+    }
+
+    &__button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &__icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    &__button-number {
+        color: #000;
+        text-align: center;
+
+        /* h6 Heading */
+        font-family: Nunito-600;
+        font-size: 14px;
+        line-height: 20.4px;
+        /* 145.714% */
+        letter-spacing: 0.06px;
+    }
+
+    &__partnership {
+        width: 100%;
+        max-width: 757px;
+        margin: 23px 0 0 114.5px;
+        color: #272557;
+
+        /* h6 Heading */
+        font-family: Nunito-600;
+        font-size: 14px;
+        line-height: 20.4px;
+        /* 145.714% */
+        letter-spacing: 0.06px;
+
+        span {
+            color: #9E9E9E;
+        }
+    }
+
+    &__menu-button {
+        margin: 17px 0 0 0;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+}

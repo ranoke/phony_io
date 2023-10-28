@@ -1,0 +1,311 @@
+.create-form {
+    margin: 15px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    padding: 33px 49px 30px 44px;
+    gap: 30px;
+
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 14px 0px rgba(53, 64, 82, 0.05);
+
+    &.edit {
+        padding: 33px 53px 49px 44px;
+        max-width: 1583px;
+    }
+
+    &.delete{
+        padding: 33px 45px 35px 44px;
+        max-width: 796px;
+    }
+
+    &__input-container {
+        width: 100%;
+        max-width: 707px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &__input-label {
+        color: #9E9E9E;
+        font-family: Nunito-400;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.079px;
+
+        &.active {
+            color: #1565C0;
+        }
+    }
+
+    &__input-box {
+        width: 100%;
+        max-width: 707px;
+        height: 50px;
+
+        border-radius: 5px;
+        border: 1px solid #E0E0E0;
+        padding: 15px 18px 0 18px;
+
+        &.active {
+            border: 1px solid #1565C0;
+            box-shadow: 0px 0px 14px 0px rgba(53, 64, 82, 0.05);
+        }
+
+        &.desc {
+            height: 131px;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        max-width: 707px;
+        color: #000;
+        font-family: Nunito-400;
+        font-size: 18px;
+        line-height: 21px;
+        /* 116.667% */
+        letter-spacing: 0.079px;
+
+        &.desc {
+            height: 110px;
+        }
+    }
+
+    &__buttons {
+        margin: 11px 0 0 0;
+        display: flex;
+        flex-direction: row;
+        gap: 22px;
+        width: 100%;
+        justify-content: flex-end;
+        &.delete{
+            margin: 7px 5px 0 0;
+        }
+    }
+
+    &__button {
+        width: 150px;
+        height: 37px;
+        border-radius: 5px;
+        background: var(--colors-2-secondary, #1565C0);
+
+        color: #FFF;
+
+        /* Subtitle2 muted scri */
+        font-family: Nunito-600;
+        font-size: 14px;
+        line-height: 21px;
+        /* 150% */
+        letter-spacing: 0.07px;
+
+        &.cancel {
+            padding: 2.5px 1px 0 0;
+            width: 147px;
+            background: var(--buttons-outlined-default, #E0E0E0);
+            color: var(--colors-grey-500, #9E9E9E);
+        }
+
+        &.delete {
+            padding: 2px 0px 0 0;
+            width: 146px;
+            background: var(--buttons-outlined-default, #F44336);
+        }
+    }
+
+    &__delete-text {
+        margin: -8px 0 -4px 0;
+        color:  #272557;
+
+        /* Subtitle1 dedisse sc */
+        font-family: Nunito-400;
+        font-size: 16px;
+        line-height: 21px;
+        /* 131.25% */
+        letter-spacing: 0.09px;
+        width: 640px;
+    }
+
+
+    &__content {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 72px;
+    }
+
+    &__inputs-container {
+        width: 100%;
+        max-width: 707px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    &__settings {}
+}
+
+
+.board-settings {
+    margin: 1px 0 0 0;
+    width: 100%;
+    max-width: 707px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    &__row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 45px;
+    }
+
+    &__part {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        width: 100%;
+        max-width: 334px;
+
+    }
+
+    &__heading {
+        color: var(--colors-grey-500, #9E9E9E);
+        font-family: Nunito-400;
+        font-size: 14px;
+        line-height: 21px;
+        /* 150% */
+        letter-spacing: 0.079px;
+    }
+
+    &__content-box {
+        padding: 0 0 0 3px;
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+
+        &.slide {
+            gap: 23px;
+        }
+    }
+
+    &__clickable-row {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        &.slide{
+            gap: 24px;
+        }
+    }
+
+    &__radio {
+        width: 20px;
+        height: 20px;
+        background: transparent;
+        border-radius: 50%;
+        border: 2px solid rgba(1, 1, 1, 0.3);
+
+        cursor: pointer;
+
+        &.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #1565C0;
+        }
+
+        &.sliding {
+            width: 34px;
+            height: 14px;
+            border-radius: 50px;
+            background: rgba(39, 37, 87, 0.1);
+            border: none;
+            position: relative;
+
+            &.active {
+                background: rgba(21, 101, 192, 0.5);
+            }
+        }
+
+        &.check {
+            width: 18px;
+            height: 18px;
+            background: transparent;
+            border-radius: 3px;
+            border: 2px solid rgba(1, 1, 1, 0.3);
+
+            &.active {
+
+                border: none;
+            }
+        }
+    }
+
+    &__radio-circle {
+        width: 10px;
+        height: 10px;
+        background-color: transparent;
+        border-radius: 50%;
+
+        &.active {
+            background-color: #1565C0;
+        }
+
+        &.sliding {
+            position: absolute;
+            margin: -3px 0 0 0;
+            width: 20px;
+            height: 20px;
+            background: #BFBECD;
+
+            &.active {
+                margin: 0px 0 0 14px;
+                width: 20px;
+                height: 20px;
+                background: #1565C0;
+            }
+        }
+    }
+
+    &__check-icon {
+        width: 0;
+        height: 0;
+
+        &.active {
+            margin: -1px 0 0 -1px;
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    &__text-box {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    &__text-1 {
+        color: #272557;
+        font-family: Nunito-600;
+        font-size: 14px;
+        line-height: 20.4px;
+        letter-spacing: 0.06px;
+    }
+
+    &__text-2 {
+        margin: 0px 0 0 0;
+        color: var(--colors-grey-500, #9E9E9E);
+        font-family: Nunito-400;
+        font-size: 12px;
+        line-height: 13.42px;
+        /* 166% */
+        letter-spacing: 0.4px;
+
+        width: 100%;
+        max-width: 292px;
+    }
+}
